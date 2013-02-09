@@ -2,6 +2,7 @@ module rsensor(
 	       input 	  in_trig,
 	       output reg out_echo
 	       );
+  parameter distance = 50;
    
   initial begin
      out_echo = 0;
@@ -9,9 +10,8 @@ module rsensor(
    integer 			  delay;
    
    always @( posedge in_trig ) begin
-      delay = $random;
-      out_echo = 0;
-      #delay out_echo <= 1;
+      out_echo <= 0;
+      #distance out_echo <= 1;
    end
    
 endmodule
