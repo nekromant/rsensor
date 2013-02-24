@@ -22,7 +22,7 @@ module detector(
   input 		 			clk,
 	input 		 			ask_echo,
 	input 			 		echo,
-	output           		valid,
+	output           			valid,
 	output 		 			trig,
 	output   reg [15:0] 	echo_time
 		);
