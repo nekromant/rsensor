@@ -51,8 +51,7 @@ module detector(
 			   		   echo_time <= counter;
 					   valid     <= 1'b1;
 					  end
-					  
-    );
+					 end
 
 
 endmodule
